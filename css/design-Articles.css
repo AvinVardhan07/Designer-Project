@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  text-align: center;
+}
+
+.gallery-section {
+  padding: 40px 280px;
+}
+
+.gallery-section h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.gallery-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.gallery-section button {
+  background: black;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.gallery-section button:hover {
+  background-color: #a0eb40;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #b0ff59;
+  color: black;
+  /* most imp = 0 0 10px */
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  /* most imp */
+  gap: 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  /* elements or images inside the grid are considered to be the block elements when maximum elements or width or space reaches out then the images or elements comes down ,like one upon other bro */
+}
